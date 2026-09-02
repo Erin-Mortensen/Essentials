@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
-//Name: 3D Project 1.ma
-//Last modified: Tue, Sep 01, 2026 10:23:10 PM
+//Name: 3D Project 2.ma
+//Last modified: Tue, Sep 01, 2026 10:23:29 PM
 //Codeset: 1252
 requires maya "2027";
 requires "stereoCamera" "10.0";
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202607171511-52c21617ee";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "0533DE5E-416F-4135-23F3-2D88811A968F";
+fileInfo "UUID" "FEF530C5-4C9C-ACB2-C8BB-9EBB16527526";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "105E9D17-4FBD-06C7-34FC-0DA3DDD19406";
@@ -3433,4 +3433,4 @@ connectAttr "groupId14.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId15.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId16.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId17.msg" ":initialShadingGroup.gn" -na;
-// End of 3D Project 1.ma
+// End of 3D Project 2.ma
