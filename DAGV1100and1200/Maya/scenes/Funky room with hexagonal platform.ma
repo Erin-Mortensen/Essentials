@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Funky room with hexagonal platform.ma
-//Last modified: Tue, Sep 22, 2026 03:37:57 PM
+//Last modified: Tue, Sep 22, 2026 03:40:41 PM
 //Codeset: 1252
 requires maya "2027";
 requires "stereoCamera" "10.0";
@@ -11,20 +11,20 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202604221258-70da84b25e";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26200)";
-fileInfo "UUID" "19DFD198-49C4-FD95-4BB6-EC89AB9D6BF8";
+fileInfo "UUID" "16AA41F5-4AB6-F4CF-B4E5-CDB6EFB1AB64";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "77A947DC-448E-99B8-6522-35B5F37D5856";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -4.9762590537104083 28.344899244498947 29.842099425572414 ;
-	setAttr ".r" -type "double3" -38.138352732320875 -2169.3999999993216 4.0298049210569947e-16 ;
+	setAttr ".t" -type "double3" 12.108937080327532 25.141055634493505 30.851177760032375 ;
+	setAttr ".r" -type "double3" -29.138352732313418 -2134.5999999992723 8.8022540096969272e-16 ;
 	setAttr ".rp" -type "double3" 8.8817841970012523e-16 1.7763568394002505e-15 1.4210854715202004e-14 ;
 	setAttr ".rpt" -type "double3" -2.2090414034283594e-15 3.1367476795337039e-15 -7.9409574639991099e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "AD329A57-4410-3FB9-083A-2CAF889D150F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 39.693964961201274;
+	setAttr ".coi" 39.693964961195057;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -88,7 +88,7 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.49609375 0.4375 ;
+	setAttr ".pv" -type "double2" 0.453125 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -676,6 +676,37 @@ createNode polyTweak -n "polyTweak6";
 	setAttr ".tk[433]" -type "float3" 0.19233264 0 0 ;
 	setAttr ".tk[434]" -type "float3" 0.19233264 0 0 ;
 	setAttr ".tk[435]" -type "float3" 0.19233264 0 0 ;
+createNode polyExtrudeFace -n "polyExtrudeFace8";
+	rename -uid "F973EBAF-4F68-6EE6-9A52-2995CB241443";
+	setAttr ".ics" -type "componentList" 2 "f[197]" "f[263]";
+	setAttr ".ix" -type "matrix" 16.094427789836413 0 0 0 0 1 0 0 0 0 16.094427789836413 0
+		 0 0 0 1;
+	setAttr ".ws" yes;
+	setAttr ".pvt" -type "float3" -3.0177019 7.7767243 0 ;
+	setAttr ".rs" 55215;
+	setAttr ".kft" no;
+	setAttr ".c[0]"  0 1 1;
+	setAttr ".cbn" -type "double3" -5.7700879328526122 7.7767243385314941 -2.6109474562160266 ;
+	setAttr ".cbx" -type "double3" -0.26531583317389956 7.7767243385314941 2.6109474562160266 ;
+createNode polyExtrudeFace -n "polyExtrudeFace9";
+	rename -uid "DF129C47-4DE1-5336-9196-C081F3C3F815";
+	setAttr ".ics" -type "componentList" 2 "f[197]" "f[263]";
+	setAttr ".ix" -type "matrix" 16.094427789836413 0 0 0 0 1 0 0 0 0 16.094427789836413 0
+		 0 0 0 1;
+	setAttr ".ws" yes;
+	setAttr ".pvt" -type "float3" -3.0177016 7.7767243 0 ;
+	setAttr ".rs" 57720;
+	setAttr ".lt" -type "double3" -4.4408920985006262e-16 2.254653474825178e-17 2.5662296348466267 ;
+	setAttr ".kft" no;
+	setAttr ".c[0]"  0 1 1;
+	setAttr ".cbn" -type "double3" -4.3629482690649795 7.7767243385314941 -1.2761177479378107 ;
+	setAttr ".cbx" -type "double3" -1.6724549573537904 7.7767243385314941 1.2761177479378107 ;
+createNode polyTweak -n "polyTweak7";
+	rename -uid "9BD39113-4E9A-14D0-6384-90896BB4FC53";
+	setAttr ".uopa" yes;
+	setAttr -s 8 ".tk[440:447]" -type "float3"  -0.087430201 0 0 0.087430201
+		 0 0 0.043715052 0 -0.082937382 -0.04371509 0 -0.082937382 -0.04371509 0 0.082937382
+		 -0.087430201 0 0 0.043715052 0 0.082937382 0.087430201 0 0;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -728,7 +759,7 @@ connectAttr "groupId1.id" "pCubeShape1.iog.og[3].gid";
 connectAttr ":initialShadingGroup.mwc" "pCubeShape1.iog.og[3].gco";
 connectAttr "groupId3.id" "pCubeShape1.iog.og[4].gid";
 connectAttr "anisotropic1SG.mwc" "pCubeShape1.iog.og[4].gco";
-connectAttr "polySplit25.out" "pCubeShape1.i";
+connectAttr "polyExtrudeFace9.out" "pCubeShape1.i";
 connectAttr "polyTweakUV2.uvtk[0]" "pCubeShape1.uvst[0].uvtw";
 connectAttr "groupId2.id" "pCubeShape1.ciog.cog[0].cgid";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
@@ -818,6 +849,11 @@ connectAttr "pCubeShape1.wm" "polyExtrudeFace7.mp";
 connectAttr "groupParts2.og" "polyTweak5.ip";
 connectAttr "polyTweak6.out" "polySplit25.ip";
 connectAttr "polyExtrudeFace7.out" "polyTweak6.ip";
+connectAttr "polySplit25.out" "polyExtrudeFace8.ip";
+connectAttr "pCubeShape1.wm" "polyExtrudeFace8.mp";
+connectAttr "polyTweak7.out" "polyExtrudeFace9.ip";
+connectAttr "pCubeShape1.wm" "polyExtrudeFace9.mp";
+connectAttr "polyExtrudeFace8.out" "polyTweak7.ip";
 connectAttr "anisotropic1SG.pa" ":renderPartition.st" -na;
 connectAttr "phong1SG.pa" ":renderPartition.st" -na;
 connectAttr "openPBRSurface1SG.pa" ":renderPartition.st" -na;
