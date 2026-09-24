@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: 3D Project Overhaul.ma
-//Last modified: Wed, Sep 23, 2026 09:35:57 PM
+//Last modified: Wed, Sep 23, 2026 09:38:32 PM
 //Codeset: 1252
 requires maya "2027";
 requires "stereoCamera" "10.0";
@@ -14,7 +14,7 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202607171511-52c21617ee";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "B2893EFD-44D8-88E0-4761-CEABC86E65A5";
+fileInfo "UUID" "8EFDE327-4598-B31C-0C7C-828853F82DD5";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "105E9D17-4FBD-06C7-34FC-0DA3DDD19406";
@@ -775,17 +775,17 @@ createNode mesh -n "BS_BookshelfShape" -p "BS_Bookshelf";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "persp1";
 	rename -uid "352FDAED-40BE-6B6C-E5E2-55A4B33DCBA4";
-	setAttr ".t" -type "double3" -11.490930657819836 33.463817518035114 7.8740267428509281 ;
-	setAttr ".r" -type "double3" -36.938352518812962 -18055.799999990923 2.8292552368971815e-15 ;
+	setAttr ".t" -type "double3" 12.417570052057519 39.376494955164006 35.685123735761572 ;
+	setAttr ".r" -type "double3" -47.138352519655847 -18341.800000013965 -4.1850634922680039e-15 ;
 createNode camera -n "persp1Shape" -p "persp1";
 	rename -uid "D7CA8EB4-4129-A473-5088-67A6BBFC2C30";
 	setAttr -k off ".v";
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 17.526525436433214;
+	setAttr ".coi" 44.205518069470308;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0.095348583370237439 22.931157731478407 -5.0118255212616702e-07 ;
+	setAttr ".tp" -type "double3" 0.095353808569121457 2.2655983063248648 -3.0296161095400009e-06 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -n "bottom";
 	rename -uid "F703D9A0-4237-8C97-D6A5-B1BED556673F";
@@ -7130,8 +7130,13 @@ createNode mesh -n "Chair_SuperiorShape" -p "Chair_Superior";
 	setAttr ".ai_matte" yes;
 createNode transform -n "pSphere1";
 	rename -uid "E72A77B0-45F4-DB3C-443C-3B824354A166";
-	setAttr ".t" -type "double3" 0.095349168083215252 22.852940463488295 0 ;
+	setAttr ".t" -type "double3" 5.1390738194395329 2.6225135116204714 6.9585214927770886 ;
+	setAttr ".r" -type "double3" 0 -62.378110387352891 0 ;
 	setAttr ".s" -type "double3" 2.802815977643367 1 2.802815977643367 ;
+	setAttr ".rp" -type "double3" 1.403050113316986e-08 -2.0637779235839844 1.3345290614014224e-07 ;
+	setAttr ".rpt" -type "double3" -1.852884572118782e-22 0 -6.2865726554030103e-22 ;
+	setAttr ".sp" -type "double3" 5.0058588454970909e-09 -2.0637779235839844 4.7613866627216339e-08 ;
+	setAttr ".spt" -type "double3" 9.0246422876727721e-09 0 8.5839039512925898e-08 ;
 createNode mesh -n "pSphereShape1" -p "pSphere1";
 	rename -uid "B2CC039D-4E6D-760A-B509-0C925672C330";
 	setAttr -k off ".v";
