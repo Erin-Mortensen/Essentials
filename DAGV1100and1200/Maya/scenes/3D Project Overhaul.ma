@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: 3D Project Overhaul.ma
-//Last modified: Wed, Sep 23, 2026 10:38:27 PM
+//Last modified: Wed, Sep 23, 2026 10:39:42 PM
 //Codeset: 1252
 requires maya "2027";
 requires "stereoCamera" "10.0";
@@ -14,7 +14,7 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202607171511-52c21617ee";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "B1B6EBCA-4E70-8A88-23EA-959B60D8BE72";
+fileInfo "UUID" "FA3357BD-4A14-5CC1-48BA-88A507BF5B7D";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "105E9D17-4FBD-06C7-34FC-0DA3DDD19406";
@@ -1872,11 +1872,11 @@ createNode mesh -n "LadderShape" -p "Ladder";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "pCube17";
+createNode transform -n "Pun_Sign";
 	rename -uid "6A42E322-4690-FA2E-7858-6AAF86E8661F";
 	setAttr ".rp" -type "double3" -4.841641722330257 3.6847751825827566 6.8107666969299308 ;
 	setAttr ".sp" -type "double3" -4.841641722330257 3.6847751825827566 6.8107666969299308 ;
-createNode mesh -n "pCubeShape6" -p "pCube17";
+createNode mesh -n "Pun_SignShape" -p "Pun_Sign";
 	rename -uid "C24D9640-492A-A7C9-9003-6C8EE771D694";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -15323,7 +15323,7 @@ connectAttr "Possible_Binder_or_TrashcanShape.iog" ":initialShadingGroup.dsm" -n
 		;
 connectAttr "waterbottleShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "LadderShape.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "pCubeShape6.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "Pun_SignShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Table_SuperiorShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "bed_loft___blanketShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "PillowShape.iog" ":initialShadingGroup.dsm" -na;
