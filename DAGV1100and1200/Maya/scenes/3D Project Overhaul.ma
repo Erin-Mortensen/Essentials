@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: 3D Project Overhaul.ma
-//Last modified: Wed, Sep 23, 2026 10:04:26 PM
+//Last modified: Wed, Sep 23, 2026 10:06:56 PM
 //Codeset: 1252
 requires maya "2027";
 requires "stereoCamera" "10.0";
@@ -14,7 +14,7 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202607171511-52c21617ee";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "0F09947C-436F-18A1-0B65-72B1C08485F2";
+fileInfo "UUID" "27886A94-4747-413D-1EED-E19042CA6530";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "105E9D17-4FBD-06C7-34FC-0DA3DDD19406";
@@ -789,13 +789,13 @@ createNode mesh -n "BS_BookshelfShape" -p "BS_Bookshelf";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "persp1";
 	rename -uid "352FDAED-40BE-6B6C-E5E2-55A4B33DCBA4";
-	setAttr ".t" -type "double3" -22.928623135700231 12.168297321290485 -5.0024431948637806 ;
-	setAttr ".r" -type "double3" -9.9383525261318244 -20622.60000000631 0 ;
+	setAttr ".t" -type "double3" 3.2160077161310481 32.133150634803982 -36.683330686251203 ;
+	setAttr ".r" -type "double3" -33.338352526129398 -20698.200000006309 0 ;
 createNode camera -n "persp1Shape" -p "persp1";
 	rename -uid "D7CA8EB4-4129-A473-5088-67A6BBFC2C30";
 	setAttr -k off ".v";
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 28.433404927005736;
+	setAttr ".coi" 45.256438016586081;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
