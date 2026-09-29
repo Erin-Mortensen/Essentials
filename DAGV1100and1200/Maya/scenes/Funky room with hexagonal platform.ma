@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Funky room with hexagonal platform.ma
-//Last modified: Tue, Sep 22, 2026 03:40:41 PM
+//Last modified: Tue, Sep 22, 2026 03:41:34 PM
 //Codeset: 1252
 requires maya "2027";
 requires "stereoCamera" "10.0";
@@ -11,20 +11,20 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202604221258-70da84b25e";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26200)";
-fileInfo "UUID" "16AA41F5-4AB6-F4CF-B4E5-CDB6EFB1AB64";
+fileInfo "UUID" "E113DB84-4710-1E33-B346-79B6EDEC60C1";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "77A947DC-448E-99B8-6522-35B5F37D5856";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 12.108937080327532 25.141055634493505 30.851177760032375 ;
-	setAttr ".r" -type "double3" -29.138352732313418 -2134.5999999992723 8.8022540096969272e-16 ;
+	setAttr ".t" -type "double3" 48.652688980837574 22.081164265943357 18.449142042035124 ;
+	setAttr ".r" -type "double3" -16.53835273231434 -2090.1999999992599 -4.6055187817366396e-15 ;
 	setAttr ".rp" -type "double3" 8.8817841970012523e-16 1.7763568394002505e-15 1.4210854715202004e-14 ;
 	setAttr ".rpt" -type "double3" -2.2090414034283594e-15 3.1367476795337039e-15 -7.9409574639991099e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "AD329A57-4410-3FB9-083A-2CAF889D150F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 39.693964961195057;
+	setAttr ".coi" 57.149112026707726;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
