@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: 3D Project Overhaul.ma
-//Last modified: Mon, Oct 05, 2026 12:18:43 AM
+//Last modified: Mon, Oct 05, 2026 12:27:29 AM
 //Codeset: 1252
 file -rdi 1 -ns "Standing_Lamp" -dr 1 -rfn "Standing_LampRN" -op "v=0;" -typ
 		 "mayaAscii" "C:/Users/fluff/GitRepos/3D Essentials/Essentials/DAGV1100and1200/Maya//scenes/Standing Lamp.ma";
@@ -33,7 +33,7 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202607171511-52c21617ee";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "5B3B69EF-48FE-F8A9-5B78-4FB50B728D63";
+fileInfo "UUID" "C31DC931-46BC-6879-D0F0-65900B8AB0EE";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "105E9D17-4FBD-06C7-34FC-0DA3DDD19406";
@@ -109,17 +109,17 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "persp1";
 	rename -uid "352FDAED-40BE-6B6C-E5E2-55A4B33DCBA4";
-	setAttr ".t" -type "double3" -3.0575336188158104 9.5155207668097255 -34.078474331463944 ;
-	setAttr ".r" -type "double3" 349.46164814809754 -23218.999999899119 0 ;
+	setAttr ".t" -type "double3" -19.064989778943239 11.517890681659072 -30.873531677490305 ;
+	setAttr ".r" -type "double3" 345.26164814637463 -23185.799999889234 0 ;
 createNode camera -n "persp1Shape" -p "persp1";
 	rename -uid "D7CA8EB4-4129-A473-5088-67A6BBFC2C30";
 	setAttr -k off ".v";
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 26.316964375263829;
+	setAttr ".coi" 27.237958255803697;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -2.8634255359063943 4.5438764254707618 -8.8705728225299083 ;
+	setAttr ".tp" -type "double3" -4.2587208050633496 4.588408543071604 -9.086768579016697 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -n "bottom";
 	rename -uid "F703D9A0-4237-8C97-D6A5-B1BED556673F";
@@ -17436,8 +17436,8 @@ createNode reference -n "Room_RecreationRN1";
 lockNode -l 1 ;
 createNode displayLayer -n "EntireDiorama";
 	rename -uid "2D9F3C9B-4669-3B22-03C6-A9ACE60DBC13";
-	setAttr ".dt" 2;
-	setAttr ".c" 30;
+	setAttr ".c" 5;
+	setAttr ".ovrgb" -type "float3" 0.057268724 0.057268724 0.057268724 ;
 	setAttr ".ufem" -type "stringArray" 0  ;
 	setAttr ".do" 2;
 select -ne :time1;
