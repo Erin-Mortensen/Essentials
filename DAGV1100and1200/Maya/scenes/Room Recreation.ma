@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Room Recreation.ma
-//Last modified: Tue, Oct 20, 2026 03:47:10 PM
+//Last modified: Tue, Oct 20, 2026 03:49:08 PM
 //Codeset: 1252
 requires maya "2027";
 requires -nodeType "materialxStack" -nodeType "MaterialXSurfaceShader" -dataType "MxDocumentStackData"
@@ -14,20 +14,20 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202604221258-70da84b25e";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26200)";
-fileInfo "UUID" "9C90C93A-4D28-A64C-315A-E6A451734CD0";
+fileInfo "UUID" "12D0C384-4152-7958-D9FB-D589D2D75935";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "009295D0-4A58-DA90-03DC-F690268B9E9E";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 3.0708383147469287 2.5089236052074222 1.3983047355131486 ;
-	setAttr ".r" -type "double3" 712.81105621442555 -5669.6004948961472 -0.050591171202712101 ;
+	setAttr ".t" -type "double3" -2.6649049907617441 4.7757359267614934 5.4839850050613883 ;
+	setAttr ".r" -type "double3" 668.46103515764707 -5820.0004950495813 0.0007055169330157365 ;
 	setAttr ".rp" -type "double3" 1.7763568394002505e-15 0 7.1054273576010019e-15 ;
 	setAttr ".rpt" -type "double3" -5.1656580931229291e-15 -3.6396930799905294e-16 -1.9068307221930733e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "34E24D7E-41C9-A18F-CA30-C7B5BBC901A9";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 20.983713894682456;
-	setAttr ".coi" 2.7574609651331121;
+	setAttr ".coi" 2.993158677291496;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
