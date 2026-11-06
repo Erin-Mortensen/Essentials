@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Room Recreation.ma
-//Last modified: Fri, Nov 06, 2026 01:18:03 AM
+//Last modified: Fri, Nov 06, 2026 01:21:33 AM
 //Codeset: 1252
 requires maya "2027";
 requires -nodeType "materialxStack" -nodeType "MaterialXSurfaceShader" -dataType "MxDocumentStackData"
@@ -19,20 +19,20 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202607171511-52c21617ee";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "D09B682E-4E1B-FF59-F4A3-85AC777E6B5D";
+fileInfo "UUID" "0D8B4907-462A-2E1E-AC33-F5883908E22B";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "009295D0-4A58-DA90-03DC-F690268B9E9E";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -27.77754249469487 9.2956012700000805 13.643398956135815 ;
-	setAttr ".r" -type "double3" 709.86069773574002 -12309.600494680328 0.0010119991444144641 ;
+	setAttr ".t" -type "double3" -34.634965817445938 6.401072712067065 11.720634064876778 ;
+	setAttr ".r" -type "double3" 717.66071763168168 -12309.200494680426 0.00099337518062837414 ;
 	setAttr ".rp" -type "double3" 1.7763568394002505e-15 0 7.1054273576010019e-15 ;
 	setAttr ".rpt" -type "double3" -5.1656580931229291e-15 -3.6396930799905294e-16 -1.9068307221930733e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "34E24D7E-41C9-A18F-CA30-C7B5BBC901A9";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 20.983713894682456;
-	setAttr ".coi" 31.989893720918936;
+	setAttr ".coi" 36.038430062682295;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -70622,15 +70622,15 @@ createNode aiMeshLight -n "light_pSphere14Shape" -p "light_pSphere14";
 	setAttr ".ai_specular" 0;
 createNode transform -n "aiAreaLight8";
 	rename -uid "D1170988-49F7-2C55-CE33-5B8A07A2871E";
-	setAttr ".t" -type "double3" 0 15.153613937302172 1.510720806277301 ;
-	setAttr ".r" -type "double3" 269.68559519453868 -0.086638551017550303 0.35844938238399482 ;
-	setAttr ".s" -type "double3" 8.1718615517367716 8.1718615517367716 18.609457879750643 ;
+	setAttr ".rp" -type "double3" 0 15.153613937302172 1.510720806277301 ;
+	setAttr ".sp" -type "double3" 0 15.153613937302172 1.510720806277301 ;
 createNode aiAreaLight -n "aiAreaLightShape8" -p "aiAreaLight8";
 	rename -uid "8E1ABB16-4E7E-1817-57DC-FBBA90CC3714";
 	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
 	setAttr -k off ".v";
 	setAttr ".csh" no;
 	setAttr ".rcsh" no;
+	setAttr ".lp" -type "double3" 0 15.153613937302172 1.510720806277301 ;
 	setAttr ".sc" -type "float3" 0.30360001 0.85369998 1 ;
 	setAttr ".intensity" 2.0060789585113525;
 	setAttr ".ai_samples" 3;
@@ -72141,6 +72141,8 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
 connectAttr "groupId1135.id" "BaseShape.iog.og[0].gid";
 connectAttr "aiStandardSurface7SG.mwc" "BaseShape.iog.og[0].gco";
 connectAttr "groupId1137.id" "BaseShape.iog.og[1].gid";
