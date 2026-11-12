@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: NURBS training arc.ma
-//Last modified: Wed, Nov 11, 2026 11:56:19 PM
+//Last modified: Wed, Nov 11, 2026 11:57:35 PM
 //Codeset: 1252
 requires maya "2027";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiSkyDomeLight"
@@ -13,17 +13,17 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202607171511-52c21617ee";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "184304BA-4046-4EE4-C2D5-7C98D7CA213D";
+fileInfo "UUID" "FABD7C21-46A0-E4E6-A03B-E69C929EBB0B";
 createNode transform -s -n "persp";
 	rename -uid "03E0A6DF-4465-83B6-D035-A8988B23A5C7";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -48.017499369533446 17.12666270901336 14.283082757934404 ;
+	setAttr ".t" -type "double3" -27.560213837130519 15.848465983619052 6.4302665875596645 ;
 	setAttr ".r" -type "double3" -3.3383527192987645 -788.99999999991473 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "28D4D782-444C-CDF8-A8AE-E1A9D2BF7868";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 44.405867963038006;
+	setAttr ".coi" 22.455901219811071;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -2118,7 +2118,7 @@ createNode script -n "sceneConfigurationScriptNode";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "ECCD1FC6-4163-360E-EDD9-BC9BB0121967";
+	rename -uid "5E808558-4520-1E03-3330-50BD4C8946D7";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" 1101.848096317261 -1255.6663613187588 ;
 	setAttr ".tgi[0].vh" -type "double2" 2192.4025868676144 -380.20085749471787 ;
